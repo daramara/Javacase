@@ -3,59 +3,46 @@
 <head>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/Javacase/styles/script.js" defer></script>
 </head>
 <body>
-
-<div class="top">
-  <h2>Big City Life Gallery</h2>
-  <p>Click on the images below:</p>
-</div>
-
-<div class="row">
-  <div class="column">
-    <img src="/Javacase/styles/images/London.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  <div class="top">
+    <h2>Big City Life Gallery</h2>
+    <p>Click on the images below:</p>
   </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/madrid.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  <div class="row">
+    <div class="column">
+      <img src="/Javacase/styles/images/London.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/madrid.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
   </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
   </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="/Javacase/styles/images/newyork.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-</div>
-
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
-</div>
-
-<script>
-function myFunction(imgs) {
-  let expandImg = document.getElementById("expandedImg");
-  let imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
-
 </body>
 </html>
