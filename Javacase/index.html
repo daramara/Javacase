@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="assets/styles.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/script.js" defer></script>
+</head>
+<body>
+
+<div class="top">
+  <h2>Big City Life Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/images/London.jpg" alt="London" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/madrid.jpg" alt="Madrid" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/newyork.jpg" alt="New York" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/seattle.jpg" alt="Seattle" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/spain.jpg" alt="Sevilla" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/holland.jpg" alt="Amsterdam" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/dubai.jpg" alt="Dubai" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/Paris.jpg" alt="Paris" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/assets/images/losangeles.jpg" alt="Los Angeles" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+</body>
+</html>
